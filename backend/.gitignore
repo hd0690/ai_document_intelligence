@@ -1,0 +1,75 @@
+# ── Virtual environment ───────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── uv ────────────────────────────────────────────────────────────────────────
+# Keep uv.lock committed (reproducible installs); ignore uv cache
+.uv/
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+MANIFEST
+
+# ── Environment / secrets ─────────────────────────────────────────────────────
+.env
+# Keep the example template
+!.env.example
+
+# ── Storage ───────────────────────────────────────────────────────────────────
+# Uploaded files and extracted text are runtime data, not source
+storage/uploads/*
+storage/processed/*
+# Chroma vector store data
+storage/chroma_db/*
+# Preserve the directory structure via .gitkeep
+!storage/uploads/.gitkeep
+!storage/processed/.gitkeep
+!storage/chroma_db/.gitkeep
+
+# ── Testing / coverage ────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+
+# ── Type checkers ─────────────────────────────────────────────────────────────
+.mypy_cache/
+.pyright/
+.ruff_cache/
+
+# ── IDEs ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Jupyter (if used for experiments) ────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── HuggingFace model cache (large, re-downloadable) ─────────────────────────
+# These are written to ~/.cache/huggingface by default, but guard against
+# anyone accidentally pointing HF_HOME inside the repo.
+.cache/
+# models/
