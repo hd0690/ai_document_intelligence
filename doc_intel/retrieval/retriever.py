@@ -3,7 +3,7 @@
 from llama_index.vector_stores.chroma import ChromaVectorStore
 from llama_index.core import VectorStoreIndex
 from llama_index.core.retrievers import VectorIndexRetriever
-from llama_index.embeddings.ollama import OllamaEmbedding
+# from llama_index.embeddings.ollama import OllamaEmbedding
 
 from config import settings
 from ingestion.embedder import get_embedding_model

@@ -24,6 +24,8 @@ dependencies = [
     "python-dotenv>=1.0.0",
     "pydantic-settings>=2.0.0",
     "httpx>=0.25.0",
+    "pypdf>=6.10.2",
+    "llama-index-readers-file>=0.6.0",
 ]
 
 [project.optional-dependencies]
